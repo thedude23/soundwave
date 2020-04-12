@@ -1,0 +1,123 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #202027;
+    width:100%;
+    height: 8%;
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.footer-nav a:hover  {
+    color: #adadad;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; /* space-between; */
+    max-width: 1200px;
+    margin: 0 auto; /* centers things */
+      /* = margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; */
+    padding: 0 40px;
+    /* flex-grow: 1; */
+  }
+
+.space {
+  margin-left: 500px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {  
+    .footer-nav ul {
+        font-size: 0.8em;
+    }
+}
+
+/* Ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .footer-nav ul {
+        font-size: 1em;
+    }
+
+    .space {
+        margin-left: 150px;
+    }
+}
+
+/* Phone L */
+@media (max-width: 425px) {  
+    .main-footer {
+        height: 60px;
+        width: auto;
+      }
+    
+    .footer-nav ul {
+        font-size: 0.7em;
+        margin-left: -30px;
+    }
+
+    .footer-nav li {
+        font-size: 12px;
+      }
+    
+    .footer-nav a {
+        padding: 0.5rem;
+    }
+
+    .footer-nav a img {
+        display: none;
+    }
+
+    .space {
+        margin-left: 170px;
+    }
+}
+
+/* Phone M */
+@media (max-width: 375px) {
+    .footer-nav ul {
+        font-size: 0.9em;
+        margin-left: -34px;
+    }
+    .space {
+        margin-left: 130px;
+    }
+}
+
+/* Phone S */
+@media (max-width: 320px) {
+    .main-footer {
+        height: 60px;
+        width: auto;
+      }
+    
+    .footer-nav ul {
+        font-size: 0.9em;
+        margin-left: -30px;
+    }
+
+    .footer-nav li {
+        font-size: 10px;
+    }
+
+    .space {
+        margin-left: 140px;
+    }
+}

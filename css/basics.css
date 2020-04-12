@@ -1,0 +1,44 @@
+/* BASIC - body styles */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #2F303A;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; /* space-between; */
+  max-width: 1200px;
+  margin: 0 auto; /* centers things */
+    /* = margin-top:0; margin-bottom:0; margin-left:auto; margin-right:auto; */
+  padding: 0 40px;
+  /* flex-grow: 1; */
+}
+
+
+/* MEDIA QUERIES */
+/* Phones M */
+/* @media (max-width: 375px) {
+  body {
+    max-height: 736px;
+  }
+} */
+
+/* Phones S */
+/* @media (max-width: 320px) {
+  body {
+    max-height: 100vh;
+  }
+} */
+

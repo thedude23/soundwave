@@ -1,0 +1,128 @@
+.discover-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 200px;
+}
+
+/* Call to action section */
+  /* Title */
+  .discover-main-section .call-to-action .title {
+    font-weight: 500;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  /* Cover image */
+  .discover-main-section .covers-image {
+    width: 30vw;
+    margin-left: 2rem;
+    height: auto;
+    max-width: 350px;
+  }
+
+  .accent-text {
+    color: #BC3A80;
+  }
+
+  /* Icons */
+  .icon-section {
+    display: flex;
+  }
+
+    .icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: .5rem;
+      padding: .75rem;
+      width: 100px;
+      height: 100px;
+      background-color: #202027;
+      margin-bottom: 2rem;
+    }
+
+      .icon img {
+        width: 40px;
+      }
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .discover-main-section {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .discover-main-section .title {
+    font-weight: 500;
+    font-size: 2.7em;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .discover-main-section .covers-image {
+    width: 40vw;
+    margin-left: 2rem;
+    height: 340px;
+    max-width: 350px;
+  }
+
+  .icon {
+    width: 90px;
+    height: 90px;
+    background-color: #202027;
+    margin-bottom: 2rem;
+    padding: .5rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+/* Phones L */
+@media (max-width: 425px) {
+  .discover-main-section {
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+
+  .discover-main-section .covers-image {
+    display: none;
+  }
+
+  .discover-main-section .call-to-action .title {
+    font-size: 1.9em;
+    width: 370px;
+  }
+}
+
+/* Phones M */
+@media (max-width: 375px) {
+  .discover-main-section .call-to-action .title {
+    font-size: 1.7em;
+    width: 370px;
+  }
+
+  .text {
+    font-size: 0.8em;
+    /* width: 300px; */
+  }
+
+  .discover-main-section {
+    margin-left: -20px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Ipad */
+@media (min-height: 1366px) {
+  .discover-main-section {
+    margin-top: 400px;
+  }
+}
